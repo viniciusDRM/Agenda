@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g8g4kvNqmGT2wYmaLNQ4qmW8nuae9nimotZHLDwSXKrHyJuIojkN8ouafEI3gH0xx9/Keg7w++BcwrxS71k49g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DIEGO\\source\\repos\\agenda(beta)\\agenda(beta).csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DIEGO\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
