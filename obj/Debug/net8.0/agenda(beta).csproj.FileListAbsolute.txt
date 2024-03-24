@@ -15,3 +15,4 @@ C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\agenda(beta).pdb
 C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\agenda(beta).genruntimeconfig.cache
 C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\ref\agenda(beta).dll
 C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\agenda(b.2756DB53.Up2Date
+C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\agenda(beta).sourcelink.json

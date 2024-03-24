@@ -15,11 +15,19 @@ namespace agenda_beta_
             this.Numero = numero;
         }
 
-        public static void AdicionarContato(List<Contato> contatos,Contato saida)
+        public static void AdicionarContato(List<Contato> contatos)
         {
+			
+			Console.Write("nome: ");
+			string nome = Console.ReadLine();
+			Console.Write("numero: ");
+			string numero = Console.ReadLine();
+			Contato adicionado = new Contato(nome,numero);
             try
             {
-                contatos.Add(saida);
+                contatos.Add(adicionado);
+				Arquivo.SalvarArquivo("contatos.json", contatos);
+				Console.WriteLine("contato adicionado com sucesso");
                 
             }
             catch (Exception e)
@@ -32,7 +40,7 @@ namespace agenda_beta_
            
 
 
-        public static void RemoverContatos(List<Contato> contatos,string nome)
+        public static void RemoverContato(List<Contato> contatos,string nome)
         {
             Contato procurado = contatos.Find(x => x.Nome == nome);
 
@@ -53,21 +61,34 @@ namespace agenda_beta_
         {
             try
             {
+				Console.Clear();
+				if(!contatos.Any())
+				{
+					Console.WriteLine("nenhum contato foi adicionado no momento");
+				}
+				else
+				{
            foreach(Contato cont in contatos)
                 {
-                    Console.WriteLine($"nome:{cont.Nome},numero: {cont.Numero}");
+                    Console.WriteLine(cont);
                 }
             }
+			}
             catch (Exception e)
             {
                 Console.WriteLine($"erro:{e.Message}");
                 
             }
             
+			
+			
         }
 
         
-       
+       public override string ToString()
+	   {
+		   return $"nome:{Nome}, numero:{Numero}";
+	   }
         
 
     }

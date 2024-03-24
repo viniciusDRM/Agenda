@@ -6,19 +6,50 @@ namespace agenda_beta_
     {
         static void Main(string[] args)
         {
-        string path = "contatos.json";
-        string lista = File.ReadAllText("contatos.json");
+			string path = "contatos.json";
+			
+			if(!File.Exists(path))
+			{
+				
+				using(StreamWriter sw = File.CreateText(path))
+				{
+					sw.Write("[  ]");
+				}
+			}
+			
+        string lista = File.ReadAllText(path);
             
           List<Contato> contatos = JsonSerializer.Deserialize<List<Contato>>(lista);
+			
+			while(true)
+			{
+			Console.WriteLine("bem vindo a sua agenda\n");
+			Console.Write("1-ler contatos\n2-adicionar contato\n3- editar contato\n4-excluir contato\n5- sair do programa\n");
+			int escolha = int.Parse(Console.ReadLine());
+			switch(escolha)
+			{
+			case 1:
+				Contato.LerContatos(contatos);
+			break;
+			case 2:
+				Contato.AdicionarContato(contatos);
+			break;			
+			case 3:
+			Console.WriteLine("manuntenção");
+			break;
+			case 4:
+			Console.WriteLine("manuntenção");
+			break;
+			case 5:
+			System.Enviroment.Exit(1);
+			
+			break;
+				
+				
+				
+			}
 
-
-           Contato teste = new Contato("teste1","555555");
-            Contato teste2 = new Contato("teste2","101506");
-           Contato.AdicionarContato(contatos,teste);
-            Contato.AdicionarContato(contatos,teste2);
-            Arquivo.SalvarArquivo(path,contatos);
-            Contato.LerContatos(contatos);
-
+			}
                 
             
            
