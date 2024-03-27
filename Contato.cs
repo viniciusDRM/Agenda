@@ -17,10 +17,17 @@ namespace agenda_beta_
 
         public static void AdicionarContato(List<Contato> contatos)
         {
-			
-			Console.Write("nome: ");
+			Console.Clear();
+			Console.Write("nome:");
 			string nome = Console.ReadLine();
-			Console.Write("numero: ");
+			Contato? verificação = contatos.Find(x => x.Nome == nome);
+			if(verificação != null)
+			{
+				Console.WriteLine("esse contato ja existe");
+				
+			}
+			else{
+			Console.Write("numero:");
 			string numero = Console.ReadLine();
 			Contato adicionado = new Contato(nome,numero);
             try
@@ -34,19 +41,54 @@ namespace agenda_beta_
             {
                 Console.WriteLine($"erro: {e.Message}");
             }
+			}
         }
+        
 
-       
-           
+		public static void EditarContato(List<Contato> contatos)
+		{
+			Console.Clear();
+			Console.WriteLine("digite o nome do contato que deseja editar");
+			string nome = Console.ReadLine();
+			
+			Contato procurado = contatos.Find(x => x.Nome == nome);
+			
+			Console.WriteLine("1-editar nome\n2-editar numero");
+			int escolha = int.Parse(Console.ReadLine());
+			switch(escolha)
+			{
+			case 1:
+			Console.WriteLine("digite um novo nome");
+			string novoNome = Console.ReadLine();
+			procurado.Nome = novoNome;
+			Arquivo.SalvarArquivo("contatos.json",contatos);
+			Console.WriteLine("contato editado com sucesso");
+			break;
+			case 2:
+			Console.WriteLine("digite um novo numero");
+			string novoNumero = Console.ReadLine();
+			procurado.Numero = novoNumero;
+			Arquivo.SalvarArquivo("contatos.json",contatos);
+			Console.WriteLine("Contato editado com sucesso");
+			break;
+				
+			}
+			
+		}
+		
 
-
-        public static void RemoverContato(List<Contato> contatos,string nome)
+			
+        public static void RemoverContato(List<Contato> contatos)
         {
+			Console.Clear();
+			Console.WriteLine("digite o nome do contato que deseja deletar:");
+			string nome = Console.ReadLine();
             Contato procurado = contatos.Find(x => x.Nome == nome);
 
             try
             {
                 contatos.Remove(procurado);
+				Arquivo.SalvarArquivo("contatos.json",contatos);
                 Console.WriteLine("contato removido com sucesso");
             }
             catch (Exception e)

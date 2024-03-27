@@ -20,10 +20,10 @@ namespace agenda_beta_
         string lista = File.ReadAllText(path);
             
           List<Contato> contatos = JsonSerializer.Deserialize<List<Contato>>(lista);
-			
+			Console.WriteLine("bem vindo a sua agenda\n");
 			while(true)
 			{
-			Console.WriteLine("bem vindo a sua agenda\n");
+			
 			Console.Write("1-ler contatos\n2-adicionar contato\n3- editar contato\n4-excluir contato\n5- sair do programa\n");
 			int escolha = int.Parse(Console.ReadLine());
 			switch(escolha)
@@ -35,13 +35,13 @@ namespace agenda_beta_
 				Contato.AdicionarContato(contatos);
 			break;			
 			case 3:
-			Console.WriteLine("manuntenção");
+			Contato.EditarContato(contatos);
 			break;
 			case 4:
-			Console.WriteLine("manuntenção");
+			Contato.RemoverContato(contatos);
 			break;
 			case 5:
-			System.Enviroment.Exit(1);
+			System.Environment.Exit(1);
 			
 			break;
 				
