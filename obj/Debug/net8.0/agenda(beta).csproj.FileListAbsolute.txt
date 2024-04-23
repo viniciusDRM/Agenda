@@ -16,3 +16,18 @@ C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\agenda(beta).genruntim
 C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\ref\agenda(beta).dll
 C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\agenda(b.2756DB53.Up2Date
 C:\Users\DIEGO\source\repos\agenda(beta)\obj\Debug\net8.0\agenda(beta).sourcelink.json
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).dll
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\refint\agenda(beta).dll
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).pdb
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).AssemblyInfoInputs.cache
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).AssemblyInfo.cs
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).csproj.CoreCompileInputs.cache
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).sourcelink.json
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\bin\Debug\net8.0\agenda(beta).exe
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\bin\Debug\net8.0\agenda(beta).deps.json
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\bin\Debug\net8.0\agenda(beta).runtimeconfig.json
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\bin\Debug\net8.0\agenda(beta).dll
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\bin\Debug\net8.0\agenda(beta).pdb
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\agenda(beta).genruntimeconfig.cache
+C:\Users\Vinic\OneDrive\Área de Trabalho\agenda\Agenda\obj\Debug\net8.0\ref\agenda(beta).dll
